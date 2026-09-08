@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人作品集 | 個人 IP 網站</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- 引入 FontAwesome 圖示庫 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- 導覽列 -->
+    <nav class="navbar">
+        <div class="logo">MyPortfolio</div>
+        <ul class="nav-links">
+            <li><a href="#about">關於我</a></li>
+            <li><a href="#projects">專題作品</a></li>
+            <li><a href="#contact">聯絡方式</a></li>
+        </ul>
+    </nav>
+
+    <!-- 個人主頁黑底 Banner / Hero 區塊 -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>你好，我是 <span class="highlight">[你的名字]</span></h1>
+            <p>歡迎來到我的個人網站！這裡記錄了我大學四年來的專題作業、程式設計與專案成果。</p>
+            <a href="#projects" class="btn">瀏覽作品</a>
+        </div>
+    </header>
+
+    <!-- 關於我 -->
+    <section id="about" class="section">
+        <h2>關於我</h2>
+        <div class="about-container">
+            <div class="about-text">
+                <p>我是 [你的大學與科系] 的學生，熱愛 [你的專業領域，如：網頁開發 / 資料分析 / UIUX 設計]。</p>
+                <p>在大學四年中，我學習了多種核心技能，並透過團隊合作與獨立專題將理論轉化為實際作品。</p>
+                <div class="skills">
+                    <span class="skill-tag">HTML / CSS / JS</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Git / GitHub</span>
+                    <span class="skill-tag">UI/UX 設計</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 專題作業成果區塊 -->
+    <section id="projects" class="section bg-light">
+        <h2>大學四年專題作品</h2>
+        
+        <!-- 篩選按鈕 -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">全部作品</button>
+            <button class="filter-btn" data-filter="freshman">大一</button>
+            <button class="filter-btn" data-filter="sophomore">大二</button>
+            <button class="filter-btn" data-filter="junior">大三</button>
+            <button class="filter-btn" data-filter="senior">大四畢業專題</button>
+        </div>
+
+        <!-- 卡片網格 -->
+        <div class="project-grid">
+
+            <!-- 大一作品 -->
+            <div class="project-card" data-category="freshman">
+                <div class="card-img">
+                    <img src="https://via.placeholder.com/400x250?text=Freshman+Project" alt="大一作品">
+                </div>
+                <div class="card-body">
+                    <span class="tag">大一</span>
+                    <h3>基礎程式設計：學分計算器</h3>
+                    <p>利用 Python / C++ 開發的簡易文字介面工具，協助學弟妹計算學期平均與學分數。</p>
+                    <a href="#" class="card-link" target="_blank">查看詳情 / GitHub <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- 大二作品 -->
+            <div class="project-card" data-category="sophomore">
+                <div class="card-img">
+                    <img src="https://via.placeholder.com/400x250?text=Sophomore+Project" alt="大二作品">
+                </div>
+                <div class="card-body">
+                    <span class="tag">大二</span>
+                    <h3>網頁程式設計：校園社團報名網站</h3>
+                    <p>使用 HTML/CSS/JS 搭配前端框架打造響應式網頁，包含前端表單驗證與 RWD 設計。</p>
+                    <a href="#" class="card-link" target="_blank">查看詳情 / GitHub <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- 大三作品 -->
+            <div class="project-card" data-category="junior">
+                <div class="card-img">
+                    <img src="https://via.placeholder.com/400x250?text=Junior+Project" alt="大三作品">
+                </div>
+                <div class="card-body">
+                    <span class="tag">大三</span>
+                    <h3>資料庫應用：智慧圖書管理系統</h3>
+                    <p>串接 SQL 資料庫與後端 API，實現圖書借還、搜尋以及管理員權限控制系統。</p>
+                    <a href="#" class="card-link" target="_blank">查看詳情 / GitHub <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- 大四作品 -->
+            <div class="project-card" data-category="senior">
+                <div class="card-img">
+                    <img src="https://via.placeholder.com/400x250?text=Senior+Project" alt="大四作品">
+                </div>
+                <div class="card-body">
+                    <span class="tag">大四畢業專題</span>
+                    <h3>AI 影像辨識與智慧監控專題</h3>
+                    <p>畢業專題作品。運用深度學習模型進行實時影像偵測，並結合 Web 介面進行數據可視化呈現。</p>
+                    <a href="#" class="card-link" target="_blank">查看詳情 / GitHub <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 聯絡方式 -->
+    <section id="contact" class="section">
+        <h2>聯絡我</h2>
+        <p class="contact-subtitle">如果您對我的作品感興趣，歡迎透過以下方式與我聯繫！</p>
+        <div class="contact-links">
+            <a href="mailto:your.email@example.com" class="contact-item"><i class="fa-regular fa-envelope"></i> Email</a>
+            <a href="https://github.com/yourusername" target="_blank" class="contact-item"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank" class="contact-item"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        </div>
+    </section>
+
+    <!-- 頁尾 -->
+    <footer>
+        <p>&copy; 2026 [你的名字]. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
