@@ -1,0 +1,54 @@
+/* 全局頁面基本設定 */
+body {
+    font-family: "Microsoft JhengHei", Arial, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #333333;
+    margin-bottom: 30px;
+}
+
+/* 圖片藝廊容器（使用 Flexbox 讓圖片排版整齊） */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 圖片連結外框 */
+.gallery-item {
+    display: block;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 圖片本體尺寸設定 */
+.gallery-item img {
+    width: 280px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+/* --- 滑鼠移過動畫效果 (純 CSS，無 JavaScript) --- */
+
+/* 當滑鼠移過圖片卡片時：整體向上懸浮並加深陰影 */
+.gallery-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* 當滑鼠移過圖片時：圖片微微放大 */
+.gallery-item:hover img {
+    transform: scale(1.08);
+}
